@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Appointment | Legal Tech
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="site-header">
+  </div>
+  <section class="page-hero">
+   <div class="container">
+    <div class="eyebrow">
+     Online Consultation Request
+    </div>
+    <h1>
+     Book an Appointment
+    </h1>
+    <p>
+     Submit your details and preferred consultation time.
+    </p>
+   </div>
+  </section>
+  <main class="section">
+   <div class="container">
+    <div class="form-wrap reveal">
+     <div class="notice">
+      Demo version: this form validates and stores the latest request in your browser using JavaScript. PHP + MySQL can be connected later for real appointment storage.
+     </div>
+     <form id="appointmentForm">
+      <div class="form-grid">
+       <div class="field">
+        <label>
+         Full Name
+        </label>
+        <input name="name" placeholder="Your name" required=""/>
+       </div>
+       <div class="field">
+        <label>
+         Phone Number
+        </label>
+        <input name="phone" placeholder="+91 XXXXX XXXXX" required=""/>
+       </div>
+       <div class="field">
+        <label>
+         Email
+        </label>
+        <input name="email" placeholder="you@example.com" required="" type="email"/>
+       </div>
+       <div class="field">
+        <label>
+         Service
+        </label>
+        <select name="service" required="">
+         <option value="">
+          Select service
+         </option>
+         <option>
+          Civil Law
+         </option>
+         <option>
+          Criminal Law
+         </option>
+         <option>
+          Family Law
+         </option>
+         <option>
+          Corporate Law
+         </option>
+         <option>
+          Property Law
+         </option>
+        </select>
+       </div>
+       <div class="field">
+        <label>
+         Preferred Date
+        </label>
+        <input name="date" required="" type="date"/>
+       </div>
+       <div class="field">
+        <label>
+         Preferred Time
+        </label>
+        <input name="time" required="" type="time"/>
+       </div>
+       <div class="field full">
+        <label>
+         Message / Enquiry
+        </label>
+        <textarea name="message" placeholder="Briefly describe your enquiry"></textarea>
+       </div>
+       <div class="field full">
+        <button class="btn btn-dark" type="submit">
+         Submit Appointment Request &rarr;
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </main>
+  <div class="toast">
+   Appointment request saved successfully in this demo.
+  </div>
+  <div id="site-footer">
+  </div>
+  <script src="js/components.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>
